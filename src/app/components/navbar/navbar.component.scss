@@ -1,0 +1,38 @@
+//Small Button//
+.nav-button {
+  //background-color: transparent;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+}
+.nav-button:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: #000000;
+}
+.nav-button:hover:before {
+  transition-delay: 0.2s;
+}
+.nav-button:before {
+  width: 0%;
+  height: 100%;
+  z-index: 3;
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+.nav-button:hover:before {
+  width: 100% !important;
+  transition: 0.7s;
+}
+.nav-button:before {
+  border-bottom: 2px solid whitesmoke;
+}

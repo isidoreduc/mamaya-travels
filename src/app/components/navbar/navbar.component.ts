@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as M from '../../../assets/materialize/js/materialize.min.js';
 
 @Component({
   selector: 'app-navbar',
@@ -7,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   title = 'Mamaya Travel';
+  options = {};
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    document.addEventListener('DOMContentLoaded', () => {
+      const elems = document.querySelectorAll('.sidenav');
+      const instances = M.Sidenav.init(elems, this.options);
+    });
+  }
 }
