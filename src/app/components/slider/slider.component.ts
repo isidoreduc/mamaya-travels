@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as M from '../../assets/materialize/js/materialize.min.js';
+import * as M from '../../../assets/materialize/js/materialize.min.js';
 
 @Component({
   selector: 'app-slider',
@@ -7,7 +7,7 @@ import * as M from '../../assets/materialize/js/materialize.min.js';
   styleUrls: ['./slider.component.scss']
 })
 export class SliderComponent implements OnInit {
-  options = {};
+  options = { indicators: false };
   constructor() {}
 
   ngOnInit() {
