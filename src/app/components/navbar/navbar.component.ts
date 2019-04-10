@@ -13,6 +13,7 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    // initialize the sidenav
     document.addEventListener('DOMContentLoaded', () => {
       const elems = document.querySelectorAll('.sidenav');
       const instances = M.Sidenav.init(elems, this.options);
