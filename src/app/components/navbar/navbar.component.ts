@@ -7,7 +7,7 @@ import * as M from '../../../assets/materialize/js/materialize.min.js';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  title = 'Mamaya Travel';
+  title = 'MamayaTravel';
   options = {};
 
   constructor() {}

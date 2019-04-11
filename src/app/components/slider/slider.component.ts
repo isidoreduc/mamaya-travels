@@ -7,7 +7,7 @@ import * as M from '../../../assets/materialize/js/materialize.min.js';
   styleUrls: ['./slider.component.scss']
 })
 export class SliderComponent implements OnInit {
-  options = { indicators: false };
+  options = { indicators: false, height: 600 };
   constructor() {}
 
   ngOnInit() {
